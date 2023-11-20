@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+  }
+  
+  .logo {
+
+    width: 50%;
+  }
+.logo__img {
+    height: 100%;
+}
+  .nav {
+    background-color: #1B87C7;
+    height: 80px;
+  }
+  .nav__route{
+    display: flex;
+    height: 100%;
+  }
+  .nav__route--list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  .nav__route--list ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  }
+  .nav__route--list li {
+    transition: all 300ms ease-in-out;
+    padding: 0px 40px;
+    color: #FEFEFE;
+  }
+  .presentation__text h1,
+  .presentation__text p {
+    margin: 40px 70px;
+    text-align: center;
+    font-size: 30px;
+  }
+.presentation {
+    display: flex;
+    align-items: center;
+
+}
+.presentation__text {
+    width: 50%;
+    color: #1B87C7;
+
+}
+.presentation__img {
+    width: 50%;
+}
+.presentation__img img {
+    width: 100%;
+}
