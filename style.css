@@ -67,5 +67,33 @@ span {
 }
 .projet {
     background-color: #1B87C7;
-    height: 300px;
+}
+.projet__text {
+    padding: 30px;
+    font-size: 30px;
+    color: #FEFEFE;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+.projet__img {
+    width: 50%;
+    padding: 20px;
+}
+.projet__img img{
+    margin: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 4.1); 
+    border-radius:20px;
+}
+.projet__detail {
+    width: 50%;
+}
+.projet__detail--logo{
+    width: 20%;
+}
+.projet__detail--logo img {
+    width: 100%;
+}
+.projet__flex{
+    display: flex;
 }
