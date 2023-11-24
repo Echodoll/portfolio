@@ -3,7 +3,8 @@
     font-family: 'Courier Prime', monospace;  }
 a {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
+    color: #FEFEFE;
 
 }
 .fade-in {
@@ -17,8 +18,14 @@ a {
   transform: translateY(0) scale(1);
 }
 a:visited {
-  color: black;
+  color: #FEFEFE;
   ;
+}
+.github{
+  color: black;
+}
+.github:visited{
+  color: black;
 }
   .logo {
 
@@ -86,7 +93,7 @@ a:visited {
 
   .presentation__text h1,
   .presentation__text p {
-    margin: 40px 140px;
+    margin: 40px 100px;
     text-align: center;
     font-size: 30px;
     font-weight: 400;
@@ -248,8 +255,7 @@ span {
 }
 .contact {
   background-color: #1B87C7;  
-  padding: 100px;
-  margin: 50px;
+  padding: 150px;
   color: #FEFEFE;
 }
 .contact__title {
