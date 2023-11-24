@@ -270,3 +270,34 @@ span {
     text-align: center;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1024px){
+  .presentation__text h1,
+  .presentation__text p {
+    margin: 40px 40px;
+  }
+} 
+@media screen and (max-width: 768px) {
+  .presentation {
+    flex-direction: column-reverse;
+
+  }
+  .projet__contenair{
+    flex-direction: column;
+  }
+  .projet__flex{
+    width: auto;
+  }
+  .presentation__img, .presentation__text {
+    width: auto;
+  }
+  .logo img{
+    display: none;
+  }
+  .nav__route--list {
+    width: auto;
+  }
+  .nav__route--list ul {
+    font-size: 15px;
+  }
+}
