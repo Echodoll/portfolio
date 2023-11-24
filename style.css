@@ -6,6 +6,16 @@ a {
     text-decoration: underline;
 
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px) scale(0.7);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
 a:visited {
   color: black;
   ;
@@ -40,13 +50,40 @@ a:visited {
     list-style: none;
     font-weight: 500;
     cursor: pointer;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
   .nav__route--list li {
-    transition: all 300ms ease-in-out;
     padding: 0px 40px;
     color: #FEFEFE;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+
   }
+  .nav__route--list li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #FEFEFE; /* Couleur du soulignement */
+    animation: underline 0.3s forwards;
+  }
+
+  @keyframes underline {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
   .presentation__text h1,
   .presentation__text p {
     margin: 40px 140px;
@@ -64,7 +101,7 @@ span {
 }
 .presentation__text {
     width: 50%;
-    color: #1B87C7;
+    color: #2e6280;
 
 }
 .presentation__img {
@@ -77,11 +114,12 @@ span {
     background-color: #1B87C7;
 }
 .projet__text {
-  padding: 20px 20px 0px;
+  padding: 40px 20px 0px;
     font-size: 30px;
     color: #FEFEFE;
     font-weight: 400;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
 .projet__img {
     padding: 20px;
@@ -137,6 +175,7 @@ span {
 }
 .projet__contenair {
   display:flex;
+  padding: 10px;
 }
 .former {
   padding: 35px;
@@ -177,4 +216,50 @@ span {
   height: 200px;
   padding: 20px;
   color: #FEFEFE;
+}
+.parcours {
+  padding: 40px;
+  color: #2e6280;
+}
+.parcours__title {
+  text-align: center;
+  padding-bottom: 35px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+}
+.parcours__list {
+  padding: 20px;
+  font-size: 20px;
+}
+.parcours__devise {
+  font-size: 32px;
+  font-style: italic;
+  padding: 30px;
+  text-align: center;
+}
+.parcours__formation {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.parcours__competences {
+  font-size: 20px;
+    text-decoration: underline;
+}
+.contact {
+  background-color: #1B87C7;  
+  padding: 100px;
+  margin: 50px;
+  color: #FEFEFE;
+}
+.contact__title {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.contact__information {
+  font-size: 20px;
+    font-style: italic;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
 }
