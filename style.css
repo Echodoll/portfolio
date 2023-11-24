@@ -295,9 +295,12 @@ span {
     display: none;
   }
   .nav__route--list {
-    width: auto;
+    width: 100%;
   }
   .nav__route--list ul {
     font-size: 15px;
+  }
+  .contact{
+    padding: 20px;
   }
 }
