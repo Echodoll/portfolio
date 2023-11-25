@@ -8,9 +8,10 @@ a {
 
 }
 .fade-in {
-  opacity: 0;
-  transform: translateY(20px) scale(0.7);
-  transition: opacity 0.5s, transform 0.5s;
+    flex: 1;
+  opacity:0;
+  transform: translateY(5px) scale(0.4);
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .fade-in.visible {
@@ -184,6 +185,7 @@ span {
 .projet__contenair {
   display:flex;
   padding: 10px;
+  height: 100%;
 }
 .former {
   padding: 35px;
@@ -282,9 +284,11 @@ span {
     flex-direction: column-reverse;
 
   }
-  .projet__contenair{
-    flex-direction: column;
+  .portfolio {
     padding: 20px;
+  }
+  .projet__contenair{
+    flex-direction: column-reverse;
   }
   .projet__flex{
     width: auto;
@@ -293,7 +297,8 @@ span {
     width: auto;
   }
   .nav__route--list {
-
+      justify-content: center;
+      width: 100%;
   }
 
   .nav__route--list.active {
@@ -305,10 +310,11 @@ span {
   }
   .logo{
     visibility: hidden;
-    width: 45%;
+    width: 0%;
   }
   .nav__route--list li {
-    padding: 10px;
+    padding: 20px;
+    margin-right: 0px;
 
   }
 
