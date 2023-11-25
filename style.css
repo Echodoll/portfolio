@@ -284,6 +284,7 @@ span {
   }
   .projet__contenair{
     flex-direction: column;
+    padding: 20px;
   }
   .projet__flex{
     width: auto;
@@ -291,15 +292,26 @@ span {
   .presentation__img, .presentation__text {
     width: auto;
   }
-  .logo img{
-    display: none;
-  }
   .nav__route--list {
-    width: 100%;
+
   }
+
+  .nav__route--list.active {
+
+  }
+
   .nav__route--list ul {
     font-size: 15px;
   }
+  .logo{
+    visibility: hidden;
+    width: 45%;
+  }
+  .nav__route--list li {
+    padding: 10px;
+
+  }
+
   .contact{
     padding: 20px;
   }
