@@ -21,3 +21,25 @@ document.addEventListener("DOMContentLoaded", function () {
     checkVisibility();
     window.addEventListener("scroll", checkVisibility);
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var animationSpan = document.querySelector(".animation");
+    var labels = ["développeuse Web", "créative", "designer", "polyvalente", "perfectionniste", "curieuse", "autonome"];
+    var currentIndex = 0;
+
+    function updateLabel() {
+        animationSpan.textContent = labels[currentIndex];
+        animationSpan.classList.remove("visible");
+        void animationSpan.offsetWidth; // Force a reflow to restart the animation
+        animationSpan.classList.add("visible");
+    }
+
+    function animateLabels() {
+        setInterval(function () {
+            currentIndex = (currentIndex + 1) % labels.length;
+            updateLabel();
+        }, 4000); // Change label every 4 seconds
+    }
+
+    // Initial call to start the animation
+    animateLabels();
+});
