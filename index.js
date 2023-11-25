@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateLabel() {
         animationSpan.textContent = labels[currentIndex];
         animationSpan.classList.remove("visible");
-        void animationSpan.offsetWidth; // Force a reflow to restart the animation
+        void animationSpan.offsetWidth;
         animationSpan.classList.add("visible");
     }
 
