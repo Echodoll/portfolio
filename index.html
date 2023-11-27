@@ -1,167 +1,138 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio de Justine Crudenaire, développeuse web passionnée. Découvrez mes compétences et créations."
-    />
-    <meta
-      name="keywords"
-      content="développeur web, portfolio, compétences, créations, web design"
-    />
-    <meta property="og:title" content="Portfolio Echodoll - Développeuse Web" />
-    <meta
-      property="og:description"
-      content="Portfolio de Justine Crudenaire, développeuse web passionnée. Découvrez mes compétences et créations."
-    />
-    <meta
-      property="og:image"
-      content="./picture/386871118_671264785133516_807038363008468467_n.webp"
-    />
-    <meta property="og:url" content="https://echodoll.github.io/portfolio/" />
-    <title>Portfolio Echodoll - Développeuse Web</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="nav">
-      <div class="nav__route">
-        <div class="logo">
-          <img
-            src="./picture/OIG (4).webp"
-            alt="pixel Art Logo "
-            class="logo__img"
-          />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio de Justine Crudenaire, développeuse web passionnée. Découvrez mes compétences et créations.">
+  <meta name="keywords" content="développeur web, portfolio, compétences, créations, web design">
+  <meta property="og:title" content="Portfolio Echodoll - Développeuse Web">
+  <meta property="og:description"
+    content="Portfolio de Justine Crudenaire, développeuse web passionnée. Découvrez mes compétences et créations.">
+  <meta property="og:image" content="./picture/386871118_671264785133516_807038363008468467_n.webp">
+  <meta property="og:url" content="https://echodoll.github.io/portfolio/">
+  <title>Portfolio Echodoll - Développeuse Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav__route">
+      <div class="logo">
+        <img src="./picture/OIG.webp" alt="pixel Art Logo " class="logo__img">
+      </div>
+      <div class="nav__route--list" id="navList">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#parcours">Parcours</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="presentation fade-in">
+      <div class="presentation__text">
+        <h1>Bienvenue dans mon univers</h1>
+        <p>
+          Je m’appelle <span>Justine Crudenaire</span> surnomée
+          <span>Echodoll </span>.
+        </p>
+        <p>Je suis <span class="animation">développeuse Web</span>.</p>
+      </div>
+      <div class="presentation__img">
+        <img alt="logo" src="./picture/386871118_671264785133516_807038363008468467_n.webp">
+      </div>
+    </section>
+    <section id="portfolio" class="projet fade-in">
+      <h1 class="projet__text">Mes dernières créations</h1>
+      <div class="projet__contenair">
+        <div class="projet__flex">
+          <div class="projet__img">
+            <img src="./picture/argentbank.webp" alt="Photos du dernier site effectué argentbank">
+          </div>
+          <div class="projet__detail">
+            <a class="github" href="https://github.com/Echodoll/ArgentBank-website">
+              <h2>Argentbank</h2>
+            </a>
+            <ul>
+              <li class="projet__detail--skills">Skills</li>
+              <li>- React.JS</li>
+              <li>- Redux</li>
+              <li>- Gestion d'état</li>
+              <li>- API</li>
+              <li>- Optimisation</li>
+            </ul>
+          </div>
         </div>
-        <div class="nav__route--list" id="navList">
-          <ul>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#parcours">Parcours</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <div class="projet__flex">
+          <div class="projet__img">
+            <img src="./picture/architecte.webp" alt="site d'une architecte ">
+          </div>
+          <div class="projet__detail">
+            <a class="github" href="https://github.com/Echodoll/Portfolio-architecte-sophie-bluel">
+              <h2>Architecte Sophie Bluel</h2>
+            </a>
+            <ul>
+              <li class="projet__detail--skills">Skills</li>
+              <li>- Javascript vanilla</li>
+              <li>- Sécurité</li>
+              <li>- Authentification</li>
+              <li>- HTML</li>
+              <li>- CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="projet__flex">
+          <div class="projet__img">
+            <img src="./picture/ohmyfood.webp" alt="site d'une architecte ">
+          </div>
+          <div class="projet__detail">
+            <a class="github" href="https://github.com/Echodoll/ohmyfood">
+              <h2>Ohmyfood</h2>
+            </a>
+            <ul>
+              <li class="projet__detail--skills">Skills</li>
+              <li>- Sass</li>
+              <li>- Animation</li>
+              <li>- Mobile-First</li>
+              <li>- HTML</li>
+              <li>- CSS</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="presentation fade-in">
-        <div class="presentation__text">
-          <h1>Bienvenue dans mon univers</h1>
-          <p>
-            Je m’appelle <span>Justine Crudenaire</span> surnomée
-            <span>Echodoll </span>.
-          </p>
-          <p>Je suis <span class="animation">développeuse Web</span>.</p>
-        </div>
-        <div class="presentation__img">
-          <img
-            alt="logo"
-            src="./picture/386871118_671264785133516_807038363008468467_n.webp"
-          />
-        </div>
-      </section>
-      <section id="portfolio" class="projet fade-in">
-        <h1 class="projet__text">Mes dernières créations</h1>
-        <div class="projet__contenair">
-          <div class="projet__flex">
-            <div class="projet__img">
-              <img
-                src="./picture/argentbank.webp"
-                alt="Photos du dernier site effectué argentbank"
-              />
-            </div>
-            <div class="projet__detail">
-              <a
-                class="github"
-                href="https://github.com/Echodoll/ArgentBank-website"
-              >
-                <h2>Argentbank</h2>
-              </a>
-              <ul>
-                <li class="projet__detail--skills">Skills</li>
-                <li>- React.JS</li>
-                <li>- Redux</li>
-                <li>- Gestion d'état</li>
-                <li>- API</li>
-                <li>- Optimisation</li>
-              </ul>
-            </div>
-          </div>
-          <div class="projet__flex">
-            <div class="projet__img">
-              <img
-                src="./picture/architecte.webp"
-                alt="site d'une architecte "
-              />
-            </div>
-            <div class="projet__detail">
-              <a
-                class="github"
-                href="https://github.com/Echodoll/Portfolio-architecte-sophie-bluel"
-              >
-                <h2>Architecte Sophie Bluel</h2>
-              </a>
-              <ul>
-                <li class="projet__detail--skills">Skills</li>
-                <li>- Javascript vanilla</li>
-                <li>- Sécurité</li>
-                <li>- Authentification</li>
-                <li>- HTML</li>
-                <li>- CSS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="projet__flex">
-            <div class="projet__img">
-              <img src="./picture/ohmyfood.webp" alt="site d'une architecte " />
-            </div>
-            <div class="projet__detail">
-              <a class="github" href="https://github.com/Echodoll/ohmyfood">
-                <h2>Ohmyfood</h2>
-              </a>
-              <ul>
-                <li class="projet__detail--skills">Skills</li>
-                <li>- Sass</li>
-                <li>- Animation</li>
-                <li>- Mobile-First</li>
-                <li>- HTML</li>
-                <li>- CSS</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="parcours" class="parcours fade-in">
-        <h1 class="parcours__title">Parcours</h1>
-        <p class="parcours__formation">
-          Formation : OpenClassRooms (intégrateur-Web)
-        </p>
-        <p class="parcours__competences">Compétences :</p>
-        <ul class="parcours__list">
-          <li>- HTML/CSS</li>
-          <li>- Javascript Vanilla</li>
-          <li>- React.JS</li>
-          <li>- Sass</li>
-          <li>- Redux</li>
-        </ul>
-        <p class="parcours__devise">
-          " Je suis avant tout passionnée et sensible au design "
-        </p>
-      </section>
-      <section id="contact" class="contact fade-in">
-        <h1 class="contact__title">Contact</h1>
-        <p class="contact__information">
-          Vous avez besoin de mes services ? Contactez-moi
-          <a href="mailto:justine.crudenaire2013@gmail.com">ici</a>.
-        </p>
-      </section>
-    </main>
-    <script src="./index.js"></script>
-  </body>
+    </section>
+    <section id="parcours" class="parcours fade-in">
+      <h1 class="parcours__title">Parcours</h1>
+      <p class="parcours__formation">
+        Formation : OpenClassRooms (intégrateur-Web)
+      </p>
+      <p class="parcours__competences">Compétences :</p>
+      <ul class="parcours__list">
+        <li>- HTML/CSS</li>
+        <li>- Javascript Vanilla</li>
+        <li>- React.JS</li>
+        <li>- Sass</li>
+        <li>- Redux</li>
+      </ul>
+      <p class="parcours__devise">
+        " Je suis avant tout passionnée et sensible au design "
+      </p>
+    </section>
+    <section id="contact" class="contact fade-in">
+      <h1 class="contact__title">Contact</h1>
+      <p class="contact__information">
+        Vous avez besoin de mes services ? Contactez-moi
+        <a href="mailto:justine.crudenaire2013@gmail.com">ici</a>.
+      </p>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
 </html>
