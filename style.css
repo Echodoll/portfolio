@@ -294,6 +294,9 @@ span {
     text-align: center;
     text-decoration: none;
 }
+.contact__me {
+  text-decoration: underline;
+}
 
 @media screen and (max-width: 1024px){
   .presentation__text h1,
