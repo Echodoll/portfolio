@@ -272,6 +272,7 @@ span {
 .parcours__formation {
   padding-bottom: 20px;
   font-size: 20px;
+  font-weight: 700;
 }
 .parcours__competences {
   font-size: 20px;
