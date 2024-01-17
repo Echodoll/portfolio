@@ -92,6 +92,7 @@ a:visited {
     margin-right: 20px;
     position: relative;
     cursor: pointer;
+    text-align: center;
 
   }
   .nav__route--list li:hover::after {
@@ -156,9 +157,19 @@ span {
     padding: 20px;
     background-color: 	#DCDCDC;
 }
+.projet__web {
+  margin-top: 70px;
+}
+.graphique__skills {
+  height: 30%;
+}
+.graphique__img {
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
 .projet__img img{
     width: 100%;
-    height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1); 
 }
 .projet__detail {
@@ -258,6 +269,7 @@ span {
   padding-bottom: 35px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 30px;
+    text-decoration: underline;
 }
 .parcours__list {
   padding: 20px;
